@@ -1,4 +1,7 @@
 version: "2.1"
+volumes:
+  JaBaNaS-Home-Movies:
+    external: true
 services:
   kdenlive:
     image: lscr.io/linuxserver/kdenlive:latest
@@ -12,6 +15,7 @@ services:
       - SUBFOLDER=/ #optional
     volumes:
       - /home/smaluish/docker/docker-config/kdenlive:/config
+      - JaBaNaS-Home-Movies:/Media
     ports:
       - 3000:3000
       - 3001:3001
