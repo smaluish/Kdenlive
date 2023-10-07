@@ -18,7 +18,7 @@ services:
     volumes:
       - /home/smaluish/docker/docker-config/kdenlive:/config
       - JaBaNaS-Home-Movies:/Media
-      - nextcloud_aio_nextcloud_datadir:/NCData
+      - jabanas-kdenlive-raw:/NCData
     ports:
       - 3000:3000
       - 3001:3001
