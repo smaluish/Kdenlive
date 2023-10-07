@@ -1,6 +1,6 @@
 version: "2.1"
 volumes:
-  nextcloud_aio_nextcloud_datadir:
+  jabanas-kdenlive-raw:
     external: true
   JaBaNaS-Home-Movies:
     external: true
