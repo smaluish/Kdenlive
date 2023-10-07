@@ -1,6 +1,6 @@
 version: "2.1"
 volumes:
-  jabanas-kdenlive-raw:
+  JaBaNaS-Syncthing:
     external: true
   JaBaNaS-Home-Movies:
     external: true
@@ -18,7 +18,7 @@ services:
     volumes:
       - /home/smaluish/docker/docker-config/kdenlive:/config
       - JaBaNaS-Home-Movies:/Media
-      - jabanas-kdenlive-raw:/NCData
+      - JaBaNaS-Syncthing:/NCData
     ports:
       - 3000:3000
       - 3001:3001
